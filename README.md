@@ -2,17 +2,17 @@
 博客文章——不定时更新
 (其实就是把之前的别处文章迁移进来)
 
-# 可视化搭建
+### 可视化搭建
 
 [富交互Web应用中的撤销和前进](./src/article/10.富交互Web应用中的撤销和前进.md)
 
 [拖拽拉伸加上旋转角度的数学原理](./src/article/12.拖拽拉伸加上旋转角度的数学原理.md)
 
-# WebIde
+### WebIde
 
 [从水印插件到修改CloudStudio构建方式](./src/article/13.从水印插件到修改CloudStudio构建方式.md)
 
-# 基础
+### 基础
 
 [网易2017秋招编程题集合+自己的结果](./src/article/1.网易2017秋招编程题集合+自己的结果.md)
 
@@ -22,15 +22,15 @@
 
 [前端数据模型Model;适用于多人团队协作的开发模式](./src/article/11.前端数据模型Model;适用于多人团队协作的开发模式.md)
 
-# Angular
+### Angular
 
 [设计一个SKU多维规格生成组件(AngularX)](./src/article/8.设计一个SKU多维规格生成组件(AngularX).md)
 
-# Python
+### Python
 
 [python实现查询百度关键词排名并截图标注保存](./src/article/4.python实现查询百度关键词排名并截图标注保存.md)
 
-# 算法
+### 算法
 
 [采用矩阵+深度优先算法解决迷宫问题](./src/article/5.采用矩阵+深度优先算法解决迷宫问题.md)
 
