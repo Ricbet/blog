@@ -12,6 +12,8 @@
 
 [从水印插件到修改CloudStudio构建方式](./src/article/13.从水印插件到修改CloudStudio构建方式.md)
 
+[code-server是如何把vscode搬到浏览器的](./src/article/14.code-server是如何把vscode搬到浏览器的.md)
+
 ### 基础
 
 [网易2017秋招编程题集合+自己的结果](./src/article/1.网易2017秋招编程题集合+自己的结果.md)
