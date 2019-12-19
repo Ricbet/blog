@@ -14,6 +14,8 @@
 
 [code-server是如何把vscode搬到浏览器的](./src/article/14.code-server是如何把vscode搬到浏览器的.md)
 
+[WebIDE技术相关资料整理](./src/article/15.WebIDE技术相关资料.md)
+
 ### 基础
 
 [网易2017秋招编程题集合+自己的结果](./src/article/1.网易2017秋招编程题集合+自己的结果.md)
