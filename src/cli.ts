@@ -3,13 +3,22 @@ import * as path from "path";
 import * as fs from "fs";
 import * as fsrd from "rd";
 
+/**
+ * img 命令参数： -n -> 文章编号
+ * new 命令参数： -t -> 文章标题
+ *
+ *
+ */
+
 enum Task {
     IMG = "img",
+    NEW = "new",
 }
 
 class Cli {
     private currentTask?: Task;
     private readonly articlePath = path.join(__dirname, "article");
+    private readonly assetsImgPath = path.join(__dirname, "assets", "img");
     private readonly distPath = path.join(__dirname, "dist");
 
     constructor() {}
@@ -60,12 +69,33 @@ class Cli {
             const currentConversionArt = allArticle.find(e => e.num === args.n.toString());
 
             if (!currentConversionArt) {
-                new Error("找不到文件");
+                this.log("找不到文件");
+                process.exit(0);
                 return;
             }
 
             await this.task(`开始转换 ${currentConversionArt.name} 里的图片地址`, async () => {
                 // Not Implementations
+            });
+        }
+
+        if (task === Task.NEW) {
+            const maxNum = Math.max(...this.laAllArticleList().map(e => parseInt(e.num)));
+            const title = args.t;
+
+            await this.task(`正在生成 ${title} 文章`, async () => {
+                const newNum = maxNum + 1;
+                const fileName = `${newNum}.${title}.md`;
+                const fileNameWithPath = `${this.articlePath}/${fileName}`;
+                const imgPath = `${this.assetsImgPath}/${newNum}`;
+
+                if (!fs.existsSync(fileNameWithPath)) {
+                    fs.writeFileSync(fileNameWithPath, "");
+                }
+
+                if (!fs.existsSync(imgPath)) {
+                    fs.mkdirSync(imgPath);
+                }
             });
         }
     }

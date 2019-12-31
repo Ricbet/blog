@@ -7,6 +7,7 @@
         "typescript": "^3.7.4"
     },
     "scripts": {
-        "conversion:img": "ts-node ./src/cli.ts img"
+        "conversion:img": "ts-node ./src/cli.ts img -n",
+        "new": "ts-node ./src/cli.ts new -t"
     }
 }
