@@ -16,6 +16,8 @@
 
 [WebIDE技术相关资料整理](./src/article/15.WebIDE技术相关资料.md)
 
+[VSCode 里的 GoToDefinition 是如何实现的](./src/article/16.VSCode里的GoToDefinition是如何实现的.md)
+
 ### 基础
 
 [网易2017秋招编程题集合+自己的结果](./src/article/1.网易2017秋招编程题集合+自己的结果.md)
