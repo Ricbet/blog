@@ -1,0 +1,12 @@
+{
+    "dependencies": {
+        "@types/node": "^13.1.2",
+        "minimist": "^1.2.0",
+        "rd": "^2.0.1",
+        "ts-node": "^8.5.4",
+        "typescript": "^3.7.4"
+    },
+    "scripts": {
+        "conversion:img": "ts-node ./src/cli.ts img"
+    }
+}
