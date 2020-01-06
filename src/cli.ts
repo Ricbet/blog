@@ -71,7 +71,6 @@ class Cli {
             if (!currentConversionArt) {
                 this.log("找不到文件");
                 process.exit(0);
-                return;
             }
 
             await this.task(`开始转换 ${currentConversionArt.name} 里的图片地址`, async () => {
