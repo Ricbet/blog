@@ -8,6 +8,8 @@
 
 [拖拽拉伸加上旋转角度的数学原理](./src/article/12.拖拽拉伸加上旋转角度的数学原理.md)
 
+[Panel-Magic可视化搭建的实现解析](./src/article/17.Panel-Magic可视化搭建的实现解析.md)
+
 ### WebIde
 
 [从水印插件到修改CloudStudio构建方式](./src/article/13.从水印插件到修改CloudStudio构建方式.md)
