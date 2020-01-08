@@ -74,7 +74,15 @@ class Cli {
             }
 
             await this.task(`开始转换 ${currentConversionArt.name} 里的图片地址`, async () => {
-                // Not Implementations
+                if (!fs.existsSync(this.distPath)) {
+                    fs.mkdirSync(this.distPath);
+                }
+
+                const artContent = fs.readFileSync(currentConversionArt.path, { encoding: "utf8" })
+                const dostKey = `(../assets/img/${currentConversionArt.num}`;
+
+                const newArtContent = artContent.replace(/\(\.\.\/assets\/img\//g, "(https://github.com/Ricbet/blog/blob/master/src/assets/img/")
+                console.log(newArtContent)
             });
         }
 
