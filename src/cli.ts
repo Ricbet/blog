@@ -78,11 +78,20 @@ class Cli {
                     fs.mkdirSync(this.distPath);
                 }
 
-                const artContent = fs.readFileSync(currentConversionArt.path, { encoding: "utf8" })
+                const artContent = fs.readFileSync(currentConversionArt.path, { encoding: "utf8" });
                 const dostKey = `(../assets/img/${currentConversionArt.num}`;
 
-                const newArtContent = artContent.replace(/\(\.\.\/assets\/img\//g, "(https://github.com/Ricbet/blog/blob/master/src/assets/img/")
-                console.log(newArtContent)
+                const newArtContent = artContent.replace(
+                    /\(\.\.\/assets\/img\//g,
+                    "(https://github.com/Ricbet/blog/blob/master/src/assets/img/"
+                );
+
+                const distArtPath = `${this.distPath}/${currentConversionArt.name}`;
+                if (fs.existsSync(distArtPath)) {
+                    fs.unlinkSync(distArtPath);
+                }
+
+                fs.writeFileSync(distArtPath, newArtContent);
             });
         }
 
