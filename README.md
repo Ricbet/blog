@@ -20,6 +20,8 @@
 
 [VSCode 里的 GoToDefinition 是如何实现的](./src/article/16.VSCode里的GoToDefinition是如何实现的.md)
 
+[VSCode 原理剖析和设计亮点](./src/article/18.VSCode原理剖析和设计亮点.md) *[Writing]
+
 ### 基础
 
 [网易2017秋招编程题集合+自己的结果](./src/article/1.网易2017秋招编程题集合+自己的结果.md)
